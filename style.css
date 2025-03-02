@@ -77,6 +77,14 @@ nav.navbar {
   margin: auto !important;
 }
 
+.india{
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(10deg);}
+}
+
 span,
 h2 {
   font-family: "Sigmar", sans-serif;
@@ -111,11 +119,6 @@ figcaption {
 .text-center {
   font-family: "Moon Dance", cursive;
 }
-
-/* h1::first-letter{
-  color: brown !important;
-  font-size: 130% !important;
-} */
 
 .card:hover {
   transform: scale(1.05) !important;
@@ -211,16 +214,3 @@ form button{
   margin: 10px;
 }
 
-.india{
-    /* margin: auto;
-    border: 1px solid black;
-    width: 200px;
-    height: 100px;
-    background-color: coral;
-    color: white; */
-    animation: mymove 5s infinite;
-  }
-  
-  @keyframes mymove {
-    50% {transform: rotate(10deg);}
-  }
