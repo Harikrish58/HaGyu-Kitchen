@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 
-nav.navbar {
+nav.navbar, footer {
   background-image: radial-gradient(
       circle at 85% 1%,
       hsla(190, 0%, 93%, 0.05) 0%,
@@ -112,7 +112,7 @@ figcaption {
   width: 380px;
   font-style: italic;
   font-weight: bold;
-  padding: 2px;
+  /* padding: 2px; */
   text-align: center;
 }
 
@@ -139,12 +139,20 @@ figcaption {
   width: 300px !important;
 }
 
-#about-us {
+#about-us , #dishes{
   scroll-margin-top: 100px; /* Adjust to match your navbar's height */
 }
 
-#Dishes {
-  scroll-margin-top: 300px; /* Adjust to match your navbar's height */
+.tab-pane {
+  display: none !important; /* Default: all panes hidden */
+}
+
+.tab-pane.active {
+  display: block !important; /* Only active pane visible */
+}
+
+.tab-pane.fade.active {
+  opacity: 1;
 }
 
 form label{
